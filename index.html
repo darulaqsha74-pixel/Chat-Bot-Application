@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="MainClass">
+        <div class="sideBar">
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <img src="logo.png" alt="Logo" class="logo" width="250px" height="150px">
+
+                </div>
+                <br>
+                <h1 id="sideHeader">LumiChat</h1><br><br>
+
+                <div class="listTable">
+                    
+                </div>
+            </aside>
+        </div>
+
+        <div class="main-content">
+
+            <div class="chat-header">
+                <div class="imageheader">
+                    <img  src="robotic image.jpg" width="80px" height="80px">
+                </div>
+                <div class="textheader">
+                    <h1>ChatBot</h1>
+                    <p>Ask me anything!</p>
+                </div>
+            </div>
+
+            <div class="chat-Area" id="chatMassage">
+
+            </div>
+
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Type your message...">
+                <button id="sendbtn" onclick="sendAction()">Send</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
 </body>
+
 </html>

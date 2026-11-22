@@ -1,20 +1,36 @@
 
-
-
+const userMessage=document.getElementById("userInput").value;
+const chatContainer = document.getElementById("chatMassage");
+    
 function sendAction() {
-    let userMessage=document.getElementById("userInput").value;
-    let chatContainer = document.getElementById("chatMassage");
-    let userMessageDiv = document.createElement("div");
+    const userMessageDiv = document.createElement("div");
 
     if(userMessage.trim()!==""){
         userMessageDiv.className = "user-message";
         userMessageDiv.textContent = userMessage;
         chatContainer.appendChild(userMessageDiv);
         document.getElementById("userInput").value = "";
+        chatContainer.scrollTop=chatContainer.scrollHeight;
+       
+        const typingDiv = showTyping();
+        const botReply = "Reply";
+        
+        typingDiv.remove();
+        getResponce();
+
     }
     
 }
 
-function getResponce(userMessage){
+function showTyping(){
+    const typingDiv = document.createElement("div");
+    typingDiv.classList.add("message","bot-message");
+    typingDiv.textContent = "Lumi is typing...";
+    chatContainer.appendChild(typingDiv);
+    chatContainer.scrollTop=chatContainer.scrollHeight;
+    return typingDiv;
+}
+
+function getResponce(){
     let API
 }
