@@ -37,9 +37,11 @@ body {
 .main-content {
     flex: 1;
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 0;
     background-color: #eae7f1;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .chat-header{
@@ -87,6 +89,7 @@ body {
 
 .chat-Area{
     flex: 1;
+    min-height: 0;
     padding: 25px;
     background-color: #fff;
     border-radius: 15px;
