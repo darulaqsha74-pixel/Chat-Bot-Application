@@ -37,11 +37,9 @@ body {
 .main-content {
     flex: 1;
     display: flex;
-    height: 100vh;
-    min-height: 0;
+    min-height: 100vh;
     background-color: #eae7f1;
     flex-direction: column;
-    overflow: hidden;
 }
 
 .chat-header{
