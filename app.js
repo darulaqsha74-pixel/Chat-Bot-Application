@@ -1,5 +1,6 @@
 
-const userMessage=document.getElementById("userInput").value;
+const userInput = document.getElementById("userInput");
+const userMessage=userInput.value;
 const chatContainer = document.getElementById("chatMassage");
     
 function sendAction() {
@@ -32,5 +33,5 @@ function showTyping(){
 }
 
 function getResponce(){
-    let API
+    
 }
