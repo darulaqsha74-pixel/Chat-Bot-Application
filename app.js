@@ -1,4 +1,4 @@
-
+import { API_Key } from "./config";
 const userInput = document.getElementById("userInput");
 const userMessage=userInput.value;
 const chatContainer = document.getElementById("chatMassage");
